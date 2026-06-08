@@ -47,9 +47,6 @@ ai-resume-analyzer/
 │ └── .env.local
 └── README.md
 
-text
-
----
 
 ## 🚀 Getting Started
 
