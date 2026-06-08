@@ -34,22 +34,25 @@ An AI-powered resume analysis tool that scores your resume against a job descrip
 
 ai-resume-analyzer/
 ├── backend/
-│ ├── main.py # FastAPI routes
-│ ├── analyzer.py # Groq LLM logic
-│ ├── parser.py # PDF parsing
+│ ├── main.py
+│ ├── analyzer.py
+│ ├── parser.py
 │ ├── requirements.txt
 │ └── .env
 ├── frontend/
 │ ├── app/
-│ │ ├── page.tsx # Main analyzer UI
-│ │ ├── auth/page.tsx # Login / Signup
-│ │ └── history/page.tsx # Analysis history
+│ │ ├── page.tsx
+│ │ ├── auth/
+│ │ │ └── page.tsx
+│ │ └── history/
+│ │ └── page.tsx
 │ ├── lib/
 │ │ └── supabase.ts
 │ └── .env.local
 └── README.md
 
 ```
+
 ---
 
 ## 🚀 Getting Started
@@ -74,11 +77,13 @@ pip install -r requirements.txt
 ```
 
 Create `backend/.env`:
+
 ```env
 GROQ_API_KEY=your_groq_api_key
 ```
 
 Run the backend:
+
 ```bash
 uvicorn main:app --reload
 ```
@@ -95,12 +100,14 @@ npm install
 ```
 
 Create `frontend/.env.local`:
+
 ```env
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
 Run the frontend:
+
 ```bash
 npm run dev
 ```
@@ -140,6 +147,9 @@ create policy "Users can insert own history"
 ---
 
 ### Backend `requirements.txt`
+
+```bash
+
 fastapi
 uvicorn
 pdfplumber
@@ -147,7 +157,7 @@ python-multipart
 groq
 python-dotenv
 
-text
+```
 
 ---
 
@@ -161,12 +171,12 @@ text
 
 - [ ] DOCX file support
 - [ ] Download rewritten resume as PDF
-- [ ] Voice-based mock interview 
+- [ ] Voice-based mock interview (Project 3)
 - [ ] Deploy frontend on Vercel + backend on Render
 
 ---
 
 ## 👨‍💻 Author
 
-**Jivitesh Singh**  
-B.Tech CSE — Amity University Chhattisgarh 
+**Jivitesh Singh**
+B.Tech CSE — Amity University Chhattisgarh
