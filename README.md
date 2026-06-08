@@ -29,6 +29,7 @@ An AI-powered resume analysis tool that scores your resume against a job descrip
 ---
 
 ## 📁 Project Structure
+
 ai-resume-analyzer/
 ├── backend/
 │ ├── main.py # FastAPI routes
